@@ -1,0 +1,27 @@
+#/bin/env bash
+clear
+echo "Listing docker images"
+echo ""
+echo ""
+docker image ls
+echo ""
+echo "Look at the image size!!!! Just 1.86MB"
+echo ""
+sleep 3
+echo "Running amioranza/scratch:gb image"
+echo ""
+echo ""
+docker run -it --rm amioranza/scratch:gb
+sleep 3
+echo ""
+echo "Huahuahuahuahuahua"
+echo ""
+echo "Listing Dockerfile contents"
+echo ""
+echo ""
+cat Dockerfile
+echo ""
+echo ""
+echo "PS.: Golang RULEZ :-)"
+echo ""
+echo ""

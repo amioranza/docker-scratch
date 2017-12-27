@@ -1,0 +1,8 @@
+FROM python:alpine
+
+LABEL maintainer="amioranza@mdcnet.ninja"
+LABEL description="Hi from Python!"
+
+COPY hi.py /
+
+ENTRYPOINT ["/usr/local/bin/python", "/hi.py"]
